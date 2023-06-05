@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Raleway';
+    background-color: #14213d;
 }
 
 .navbar-brand img {
@@ -11,7 +12,7 @@ body {
   }
 
  
-  body{
+  #showcase, #aboutUsShowcase, #consultMainPage{
     background-color: #14213d;
   }
 
