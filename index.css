@@ -25,6 +25,16 @@ body {
     text-align: center;
 }
 
+#aboutUsText{
+    color:#fff;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    text-align: center;
+}
+
 .brand-text {
     display: flex;
     align-items: flex-end;
