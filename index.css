@@ -1,3 +1,6 @@
+
+
+
 body {
     font-family: 'Raleway';
 }
@@ -7,16 +10,11 @@ body {
     width: auto;
   }
 
-  :root {
-    --primary: #000; 
-    --secondary: #14213d;
-    --tertiary: #fca311;
-  }
-
-  .custom-navbar{
-    background-color: #000 ;
-  }
+ 
   body{
     background-color: #14213d;
   }
 
+#showcase{
+    color:#fca311;
+}
