@@ -39,6 +39,7 @@ body {
     margin-left: 10px; 
   }
 
-  #headerText{
+  #headerText, #tenetsColor{
     color:#fca311;
   }
+
