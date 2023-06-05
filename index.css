@@ -17,4 +17,24 @@ body {
 
 #showcase{
     color:#fca311;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+.brand-text {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  .brand-text h1 {
+    margin-right: 10px;
+  }
+  
+  .brand-text h3 {
+    margin-left: 10px;
+  }
