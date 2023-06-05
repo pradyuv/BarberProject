@@ -59,3 +59,12 @@ body {
         width: 50% ;
     }
   }
+
+.card{
+    background-color: #000;
+    color: #fca311;
+}
+
+#navbar{
+    background-color: #000;
+}
