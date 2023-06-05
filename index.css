@@ -16,7 +16,7 @@ body {
   }
 
 #showcase{
-    color:#fca311;
+    color:#fff;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -36,5 +36,9 @@ body {
   }
   
   .brand-text h3 {
-    margin-left: 10px;
+    margin-left: 10px; 
+  }
+
+  #headerText{
+    color:#fca311;
   }
