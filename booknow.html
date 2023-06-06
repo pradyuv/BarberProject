@@ -59,24 +59,20 @@
                     <br>
                     <div class="serviceSelect justify-content-center row mt-3">
                         <div class="col-sm-6">
-                            <button class="btn btn-primary dropdown-toggle form-control-lg" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Select Service:
-                              </button>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Classic Cut</a></li>
-                                <li><a class="dropdown-item" href="#">Regal Shampoo</a></li>
-                                <li><a class="dropdown-item" href="#">Beard Shave/Sculpt</a></li>
-                              </ul>
+                            <select id="serviceMenu" name="serviceMenu" required="" class="p-3">
+                                <option value="" disabled="" selected="">Please select an option</option>
+                                <option value="ClassicCut">Classic Cut ($35)</option>
+                                <option value="RegalShampoo">Regal Shampoo ($15)</option>
+                                <option value="Beard">Beard Shave/Scuplt ($20)</option>
+                            </select>
                         </div>
-                        <div class="col-sm-6">
-                            <button class="btn btn-secondary dropdown-toggle form-control-lg mr-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Select Barber:
-                              </button>
-                              <ul class="dropdown-menu ml-5">
-                                <li><a class="dropdown-item" href="#">Barry Curtison</a></li>
-                                <li><a class="dropdown-item" href="#">David Young</a></li>
-                                <li><a class="dropdown-item" href="#">Joseph Antari</a></li>
-                              </ul>
+                        <div class="col-sm-6 d-md-flex justify-content-end">
+                            <select id="barberMenu" name="barberMenu" required="" class="p-3">
+                                <option value="" disabled="" selected="">Please select an option</option>
+                                <option value="ClassicCut">Barry Curtison</option>
+                                <option value="RegalShampoo">David Young</option>
+                                <option value="Beard">Joseph Antari</option>
+                            </select>
                         </div>
                     </div>
                 </div>
