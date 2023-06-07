@@ -81,7 +81,7 @@
                     <br>
                     <div class="timeSelect justify-content-center row mt-3">
                             <select id="timeMenu" name="timeMenu" required="" class="form-control form-control-md text-center w-50">
-                                <option value="" disabled="" selected="">Please select an time</option>
+                                <option value="" disabled="" selected="">Please select a time</option>
                                 <option value="9:00AM">9:00AM</option>
                                 <option value="9:30AM">9:30AM</option>
                                 <option value="10:00AM">10:00AM</option>
@@ -105,6 +105,24 @@
                     <br>
                     <div class="col d-flex justify-content-center p-2">
                         <input type="submit" id="submitBooking" value="Submit">
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="confirmModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Thank you!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            An email will be sent confirming your appointment. If you have not received an email within an hour, please <i>Contact Us</i>, and we will be happy to assist you.
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="doneConsult()">Close</button>
+                            <button type="button" class="btn btn-primary" onclick="doneConsult()">Understood</button>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
