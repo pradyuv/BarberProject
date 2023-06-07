@@ -21,9 +21,23 @@ if (window.location.href.endsWith("index.html")){ //only occurs in index.html, s
     
 }
 
-//consult and cut validation -> works on booknow and index
+//consult and cut validation
 document.getElementById("submitConsult").addEventListener("click", function(event) {
-    var emailInput = document.getElementById("emailConsultAndCut");
+    var validationPass = validateEmail("emailConsultAndCut");
+    if (validationPass){
+        $('#staticBackdrop').modal('show');
+    }    
+  });
+
+  document.getElementById("submitBooking").addEventListener("click", function(event) {
+    var validationPass = validateEmail("emailAddressInputBooking");
+  });
+
+
+  
+
+  function validateEmail(inputId){
+    var emailInput = document.getElementById(inputId);
     var email = emailInput.value.trim();
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     
@@ -32,13 +46,16 @@ document.getElementById("submitConsult").addEventListener("click", function(even
       event.preventDefault();
       emailInput.setCustomValidity("Please enter a valid email address");
       emailInput.reportValidity();
+      return false;
     } else {
       // Valid email, allow form submission and show the modal
       emailInput.setCustomValidity("");
       emailInput.reportValidity();
-      $('#staticBackdrop').modal('show');
+      return true;
     }
-  });
+  };
+
+  
 
   // Clear the validation message when the email input value changes
   document.getElementById("emailConsultAndCut").addEventListener("input", function() {
@@ -46,5 +63,5 @@ document.getElementById("submitConsult").addEventListener("click", function(even
   });
 
   function doneConsult() {
-    location.reload();
+    location.reload(); //reloads webpage when consult is done
   }
