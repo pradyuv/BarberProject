@@ -46,12 +46,11 @@
            </div>
        </div>
    </nav>
-   <div class="col">
-    <h1 id="headerText" class="text-center md-5 p-5">Our Services</h1>
-    <div class="container-fluid">
-        <div class="row justify-content-center align-items-center p-15">
-            <div class="col-sm-3">
-                <div class="card p-3">
+   <div class="row container-fluid justify-content-center">
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card p-3 mx-auto" style="max-width: 700px;">
                     <img card-img-top img-fluid src="Images/barbernont-fotor-bg-remover-20230605171535.png" alt="ClassicCut">
                     <div class="card-info">
                         <div class="card-title-and-price align-items-center pt-3">
@@ -66,8 +65,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="card p-3">
+            <div class="carousel-item">
+                <div class="card p-3 mx-auto" style="max-width: 700px;">
                     <img card-img-top img-fluid src="Images/shampoo-icon-hairdresser-washing-the-hair-of-a-client-with-bubbles-shampoo-icon-people-icon-cA23NZSf-fotor-bg-remover-2023060517197.png" alt="Regal Shampoo">
                     <div class="card-info">
                         <div class="card-title-and-price align-items-center pt-3">
@@ -80,8 +79,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="card p-3">
+            <div class="carousel-item">
+                <div class="card p-3 mx-auto" style="max-width: 700px;">
                     <img card-img-top img-fluid src="Images/Barber-shop-logo-on-transparent-background-PNG-fotor-bg-remover-20230605173113.png" alt="Beard Shave/Sculpt">
                     <div class="card-info">
                         <div class="card-title-and-price align-items-center pt-3">
@@ -95,9 +94,16 @@
                 </div>
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-   </div>
-
+</div>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>  
    <script src="index.js"></script>
 </body>
