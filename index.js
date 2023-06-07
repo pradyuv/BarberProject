@@ -33,7 +33,9 @@ document.getElementById("submitConsult").addEventListener("click", function(even
     validateEmail("emailAddressInputBooking");
     var formPass = validateBookNow("bookNowForm");
     if (formPass){
-        window.location.href = "confirmationpage.html";
+        $("#submitBooking").on("click", function(){
+            window.location.href = 'confirmationpage.html'; //redirects to confirmationpage.html
+        });
     }
   });
 
