@@ -14,12 +14,29 @@ var yyyy = today.getFullYear();
 today = yyyy + '-' + mm + '-' + dd;
 document.getElementById("dateToBook").setAttribute("min", today);
 
-function validateInput() {
-    var input = document.getElementById('emailConsultAndCut').value;
-    // Add your input validation logic here
-    if (input === re) {
+document.getElementById("submitConsult").addEventListener("click", function(event) {
+    var emailInput = document.getElementById("emailConsultAndCut");
+    var email = emailInput.value.trim();
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    if (!emailRegex.test(email)) {
+      // Prevent the form submission
+      event.preventDefault();
+      emailInput.setCustomValidity("Please enter a valid email address");
+      emailInput.reportValidity();
+    } else {
+      // Valid email, allow form submission and show the modal
+      emailInput.setCustomValidity("");
+      emailInput.reportValidity();
       $('#staticBackdrop').modal('show');
-    }else{
-        input.setCustomValidity("Invalid email.");
     }
+  });
+
+  // Clear the validation message when the email input value changes
+  document.getElementById("emailConsultAndCut").addEventListener("input", function() {
+    this.setCustomValidity("");
+  });
+
+  function doneConsult() {
+    location.reload();
   }

@@ -117,27 +117,26 @@
         <div class="d-md-flex justify-content-between align-items-center">
             <h5 class="mb-3 mb-md-0 p-1" style="color: white; background-color:#14213d;">Want to inquire before getting your cut? Type in your email, and we will reach out and make sure you are accomodated!</h5>
             <div class="input-group news-input">
-                <input type="email" class="form-control" placeholder="Your email" aria-label="Your email" aria-describedby="button-addon2" id="emailConsultAndCut" required>         
-                <button class="btn btn-dark btn-lg" type="submit" onclick="validateInput()" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="submitConsult">Consult and Cut</button>
+                <input type="email" class="form-control" placeholder="Your email" aria-label="Your email" aria-describedby="button-addon2" id="emailConsultAndCut" required="">         
+                <button class="btn btn-dark btn-lg" type="submit" id="submitConsult">Consult and Cut</button>
                 <!-- Modal -->
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Thank you!</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Thank you!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            A representative will e-mail you shortly. Thank you for choosing Crown and Blade Barbershop.
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="doneConsult()">Close</button>
+                            <button type="button" class="btn btn-primary" onclick="doneConsult()">Understood</button>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                        A representative will e-mail you shortly. Thank you for choosing Crown and Blade Barbershop.
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Understood</button>
                         </div>
                     </div>
-                    </div>
-                </div>
-  
               </div>
         </div>
         </div>
