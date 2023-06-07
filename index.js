@@ -30,7 +30,11 @@ document.getElementById("submitConsult").addEventListener("click", function(even
   });
 
   document.getElementById("submitBooking").addEventListener("click", function(event) {
-    var validationPass = validateEmail("emailAddressInputBooking");
+    validateEmail("emailAddressInputBooking");
+    var formPass = validateBookNow("bookNowForm");
+    if (formPass){
+        window.location.href = "confirmationpage.html";
+    }
   });
 
 
@@ -64,4 +68,36 @@ document.getElementById("submitConsult").addEventListener("click", function(even
 
   function doneConsult() {
     location.reload(); //reloads webpage when consult is done
+  }
+
+  function validateBookNow(formId){
+    var form = document.getElementById(formId);
+    var elements = form.elements;
+    var isValid = true;
+
+  for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+
+    // Skip elements that are not input fields or select fields
+    if (
+      element.tagName !== "INPUT" &&
+      element.tagName !== "SELECT"
+    ) {
+      continue;
+    }
+
+    // Check if the field is required and if its value is empty
+    if (element.hasAttribute("required") && element.value.trim() === "") {
+      isValid = false;
+      break;
+    }
+  }
+
+  if (isValid) {
+    console.log("Form is valid. Submitting...");
+    return true;
+  } else {
+    console.log("Form is not valid. Please fill out all required fields.");
+    return false;
+  }
   }
