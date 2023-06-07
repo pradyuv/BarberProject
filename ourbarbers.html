@@ -46,25 +46,25 @@
            </div>
        </div>
    </nav>
-   <div class="col">
-    <h1 id="headerText" class="text-center md-5 p-5">Our Barbers</h1>
-    <div class="container-fluid">
-        <div class="row justify-content-center align-items-center p-15">
-            <div class="col-sm-3">
-                <div class="card p-3">
-                    <img card-img-top img-fluid src="Images/barber1.jpeg" alt="BarryCurtison">
-                    <div class="card-info">
-                        <div class="card-title-and-price align-items-center pt-3">
-                            <h4>Barry Curtison</h4>
-                        </div>
-                        <div class="card-text">
-                            <p>Barry Curtison is an esteemed expert barber with over 20 years of experience. Known for his attention to detail and commitment to delivering exceptional results, he specializes in a wide range of cutting-edge techniques and styles. Barry's personalized approach, professionalism, and dedication to continuous learning have earned him a well-deserved reputation as a trusted and respected barber in the industry.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card p-3">
+   <h1 id="headerText" class="text-center pb-5">Our Barbers</h1>
+   <div class="row container-fluid justify-content-center">
+       <div id="carouselExample" class="carousel slide">
+           <div class="carousel-inner">
+               <div class="carousel-item active">
+                   <div class="card p-3 mx-auto" style="max-width: 700px;">
+                       <img card-img-top img-fluid src="Images/barber1.jpeg" alt="BarryCurtison">
+                       <div class="card-info">
+                           <div class="card-title-and-price pt-3">
+                               <h4 class="text-center">Barry Curtison</h4>
+                           </div>
+                           <div class="card-text">
+                               <p>Barry Curtison is an esteemed expert barber with over 20 years of experience. Known for his attention to detail and commitment to delivering exceptional results, he specializes in a wide range of cutting-edge techniques and styles. Barry's personalized approach, professionalism, and dedication to continuous learning have earned him a well-deserved reputation as a trusted and respected barber in the industry.</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="carousel-item">
+                   <div class="card p-3 mx-auto" style="max-width: 700px;">
                     <img card-img-top img-fluid src="Images/barber2.jpg" alt="DavidYoung">
                     <div class="card-info">
                         <div class="card-title-and-price align-items-center pt-3">
@@ -74,10 +74,10 @@
                             <p>David Young is a renowned expert barber known for his artistic flair and exceptional attention to detail. With decades of experience, he is a master of precision cutting and creating unique, trendsetting looks. David's warm and personable nature allows him to connect with clients, ensuring a personalized experience that brings out their individuality. Continually staying ahead of trends, he combines his expert knowledge with a dedication to ongoing education. David's name is synonymous with excellence in the barbering community, delivering unforgettable and personalized results to his loyal clientele.</p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card p-3">
+                   </div>
+               </div>
+               <div class="carousel-item">
+                   <div class="card p-3 mx-auto" style="max-width: 700px;">
                     <img card-img-top img-fluid src="Images/barber3.JPG" alt="JosephAntari">
                     <div class="card-info">
                         <div class="card-title-and-price align-items-center pt-3">
@@ -87,9 +87,19 @@
                             <p>Joseph Antari is a renowned and versatile expert barber known for his artistic vision and personalized approach. With extensive experience across various hair textures and styles, Joseph creates tailored looks that enhance individual features. His ability to understand clients' desires and collaborate closely with them sets him apart, resulting in exceptional and satisfying outcomes. Joseph's inviting demeanor and commitment to ongoing learning create a relaxed and enjoyable barbershop experience.</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                   </div>
+               </div>
+           </div>
+           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+           </button>
+           <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
+           </button>
+       </div>
+   </div>
     </div>
    </div>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>  
