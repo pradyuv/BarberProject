@@ -68,3 +68,7 @@ body {
 #navbar{
     background-color: #000;
 }
+
+.rounded-select {
+  border-radius: 1rem;
+}
